@@ -1,0 +1,95 @@
+<!DOCTYPE html>     
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girlculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="thai.png">
+
+</head>
+<body>
+
+    <audio id = "theme" src="dandan.mp3" controls autoplay loop></audio>
+
+    <h1 id="first">This is a good girlculator</h1>
+
+
+    <div id="calculator">
+        <input id = "display" readonly>
+        <br><br>
+
+        <div id = "keys">   
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2'); oni();">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('+')" class="operator">+</button>
+            <button onclick="appendToDisplay('4'); ona();">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6'); onu();">6</button>
+            <button onclick="appendToDisplay('-')" class="operator">-</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8'); one();">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('*'); onz();" class="operator">*</button>
+            <button onclick="appendToDisplay('0'); onv();">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="calculate(); ono();">=</button>
+            <button onclick="appendToDisplay('/')" class="operator">/</button>
+            <button id="clear" onclick="clearDisplay(); ons();">C</button>
+
+        </div>
+    </div>
+
+    <audio id="click-sound1" src="groan.mp3"></audio>
+    <audio id="click-sound2" src="angry.mp3"></audio>       
+    <audio id="click-sound3" src="oni.mp3"></audio>
+
+    <video id="background-video" src="rickroll.mp4"></video>
+
+
+    <!-- this is a small script for black-mailing the user, just for fun -->
+   <script>
+    function ono() {
+            document.getElementById("first").innerHTML = "You will have a bad time, you have to pay for it";
+    }
+
+    function oni() {
+            document.getElementById("first").innerHTML = "Hello, I am a living calculator";
+    }
+
+    function ona() {
+            document.getElementById("first").innerHTML = "Do you think I am beautiful ?";
+    }
+
+    function onu() {
+            document.getElementById("first").innerHTML = "Why you make me hurt like this ?";
+    }
+
+    function one() {
+            document.getElementById("first").innerHTML = "Stop it, I am not a toy";
+    }
+
+    function ons() {
+            document.getElementById("first").innerHTML = "You are so mean to me, I am going to tell your parents";
+    }
+
+    function onz() {
+            document.getElementById("first").innerHTML = "I am going to cry, stop it please";
+    }
+
+    function onv() {
+            document.getElementById("first").innerHTML = "I will find you tonight, you can't hide from me";
+    }
+
+
+    </script>
+    <!-- this is it -->
+
+    <script src="index.js"></script>  <!-- Link to the JavaScript file -->
+
+    
+</body>
+
+</html>
