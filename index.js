@@ -11,6 +11,17 @@ const theme = document.getElementById('theme');
 
 const video = document.getElementById('background-video');
 
+// Hàm này sẽ tự động chạy ngay khi người dùng click bất kỳ chỗ nào trên web
+window.addEventListener('click', function() {
+    const theme = document.getElementById("theme");
+    
+    // Kiểm tra nếu nhạc chưa chạy thì mới cho chạy
+    if (theme.paused) {
+        theme.play();
+        theme.volume = 0.2; // Chỉnh âm lượng nhỏ vừa phải
+    }
+}, { once: true }); // { once: true } để nó chỉ chạy đúng 1 lần đầu tiên khi click
+
 
 
 
