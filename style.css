@@ -8,11 +8,6 @@
 
 #calculator
 {
-        /*width: 90%;  Giảm chiều rộng của máy tính để phù hợp với màn hình nhỏ 
-        max-width: none;  Loại bỏ giới hạn chiều rộng tối đa 
-        transform: scale(0.9); Thu nhỏ toàn bộ máy tính để vừa với màn hình */
-      
-
     font-family: 'Courier New', Courier, monospace;
     background-color: black;
     overflow:hidden;
@@ -59,9 +54,6 @@ button{
 
 body
 {
-    padding: 10px;
-
-
     flex-direction: column; /* Ensure the body is a flex container with column direction */
 
     background-image: url("girlalime.gif");
@@ -129,4 +121,3 @@ button:active
     z-index: 9999; /* ensure the video is on top of other elements */
     background-color: black; /* fallback color in case the video fails to load */
 }
-    
